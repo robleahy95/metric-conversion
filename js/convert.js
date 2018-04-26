@@ -2,32 +2,24 @@ var myAlert = "please enter correct measurement"
 var Null = "please enter measurement"
 
 function feetToMeters ()
-if(!measure){
-alert ("please enter value")
-}
-
-else if(measure<=0) {
-alert ("please ensure value is over 0")
-}
-else if(measure>0) 
 {
   var measure = parseInt(document.getElementById("value1").value);
 
   var meters = measure * 0.3048;
   var message = measure + ' feet converts to ' + meters + ' meters.';
   console.log(message)
+		
+		if(!measure){
+			alert ("please enter value")
+		}
+			else if(measure<=0) {
+				alert ("please ensure value is over 0")
+			}
+
 }
 
 
 function inchesToCentimeters ()
-if(!measure){
-alert ("please enter value")
-}
-
-else if(measure<=0) {
-alert ("please ensure value is over 0")
-}
-else if(measure>0) 
 {
   var measure = parseInt(document.getElementById("value1").value);
 
@@ -36,19 +28,20 @@ else if(measure>0)
   console.log(message)
   
 document.getElementbyId("resultSentence").innerHTML = message;
+		
+		if(!measure){
+			alert ("please enter value")
+		}
+
+			else if(measure<=0) {
+				alert ("please ensure value is over 0")
+			}
 }
 
 
 
 function yardsToMeters ()
-if(!measure){
-alert ("please enter value")
-}
-
-else if(measure<=0) {
-alert ("please ensure value is over 0")
-}
-else if(measure>0) {
+{
   var measure = parseInt(document.getElementById("value1").value);
 
   var yards = measure * 0.9144;
@@ -56,18 +49,19 @@ else if(measure>0) {
   console.log(message)
   
 document.getElementbyId("resultSentence").innerHTML = message;
+	
+	if(!measure){
+			alert ("please enter value")
+		}
+
+			else if(measure<=0) {
+				alert ("please ensure value is over 0")
+			}
 }
 
 
 function milesToKilometers ()
-	if(!measure){
-alert ("please enter value")
-}
-
-else if(measure<=0) {
-alert ("please ensure value is over 0")
-}
-else if(measure>0) {
+{
   var measure = parseInt(document.getElementById("value1").value);
 
   var meters = measure * 1.60934;
@@ -75,7 +69,16 @@ else if(measure>0) {
   console.log(message)
 
 document.getElementbyId("resultSentence").innerHTML = message;
+	
+	if(!measure){
+			alert ("please enter value")
+		}
+
+			else if(measure<=0) {
+				alert ("please ensure value is over 0")
+	        }
 }
+
 
 
 
