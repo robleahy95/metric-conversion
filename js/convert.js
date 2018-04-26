@@ -1,3 +1,5 @@
+var myAlert = "please enter correct measurement"
+var Null = "please enter measurement"
 
 function feetToMeters ()
 if(!measure){
