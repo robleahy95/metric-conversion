@@ -1,5 +1,14 @@
 
-function feetToMeters (){
+function feetToMeters ()
+if(!measure){
+alert ("please enter value")
+}
+
+else if(measure<=0) {
+alert ("please ensure value is over 0")
+}
+else if(measure>0) 
+{
   var measure = parseInt(document.getElementById("value1").value);
 
   var meters = measure * 0.3048;
@@ -7,7 +16,17 @@ function feetToMeters (){
   console.log(message)
 }
 
-function inchesToCentimeters (){
+
+function inchesToCentimeters ()
+if(!measure){
+alert ("please enter value")
+}
+
+else if(measure<=0) {
+alert ("please ensure value is over 0")
+}
+else if(measure>0) 
+{
   var measure = parseInt(document.getElementById("value1").value);
 
   var inches = measure * 2.54;
@@ -19,7 +38,15 @@ document.getElementbyId("resultSentence").innerHTML = message;
 
 
 
-function yardsToMeters (){
+function yardsToMeters ()
+if(!measure){
+alert ("please enter value")
+}
+
+else if(measure<=0) {
+alert ("please ensure value is over 0")
+}
+else if(measure>0) {
   var measure = parseInt(document.getElementById("value1").value);
 
   var yards = measure * 0.9144;
@@ -30,7 +57,15 @@ document.getElementbyId("resultSentence").innerHTML = message;
 }
 
 
-function milesToKilometers (){
+function milesToKilometers ()
+	if(!measure){
+alert ("please enter value")
+}
+
+else if(measure<=0) {
+alert ("please ensure value is over 0")
+}
+else if(measure>0) {
   var measure = parseInt(document.getElementById("value1").value);
 
   var meters = measure * 1.60934;
